@@ -1,6 +1,6 @@
 {
   "name": "klevebrand-drone-pid-repository-eeprom",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "An implementation for klevebrand-all-drone-core pid repository that uses eeprom as storage.",
   "keywords": "klevebrand,eeprom,pid,drone",
   "repository":
@@ -18,8 +18,19 @@
   ],
   "license": "MIT",
   "homepage": "https://klevebrand.se",
-  "dependencies": { 
+  "dependencies": {
+    "lordmax2/klevebrand-all-drone-controller-core": "^1.9.0",
+    "robtillaart/I2C_EEPROM": "^1.9.4"
   },
-  "frameworks": "*",
-  "platforms": "Arduino"
+  "frameworks": "arduino",
+  "platforms": "*",
+  "export": {
+    "include": [
+      "include",
+      "src",
+      "README.md",
+      "LICENSE",
+      "library.json"
+    ]
+  }
 }
